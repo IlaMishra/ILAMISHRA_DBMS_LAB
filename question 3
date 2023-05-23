@@ -1,4 +1,4 @@
-set SQL_Mode = '';
+set SQL_Mode='';
 select count(cus_name) as 'Total Customers', cus_gender from (
 	select * from (
 		select C.CUS_NAME, C.CUS_GENDER, O.* from customer c
